@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="MTCHT001" application="MTCH" version="01" country="MX" language="ES">
+	<paramsIn>
+		<parameter order="1" name="selector" mandatory="0" type="String" size="20"/>
+		<dto order="2" name="employeeIn" mandatory="0" package="com.bbva.mtch.dto.employees.EmployeesDTO" artifactId="MTCHC001">
+			<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+			<parameter order="2" name="name" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="department" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="rfc" mandatory="0" type="String" size="20"/>
+			<parameter order="5" name="email" mandatory="0" type="String" size="20"/>
+			<parameter order="6" name="phone" mandatory="0" type="String" size="20"/>
+			<parameter order="7" name="address" mandatory="0" type="String" size="20"/>
+			<parameter order="8" name="registrationDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+			<parameter order="9" name="status" mandatory="0" type="Long" size="10"/>
+			<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+		</dto>
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="employeeOut" mandatory="0" package="com.bbva.mtch.dto.employees.EmployeesDTO" artifactId="MTCHC001">
+			<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+			<parameter order="2" name="name" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="department" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="rfc" mandatory="0" type="String" size="20"/>
+			<parameter order="5" name="email" mandatory="0" type="String" size="20"/>
+			<parameter order="6" name="phone" mandatory="0" type="String" size="20"/>
+			<parameter order="7" name="address" mandatory="0" type="String" size="20"/>
+			<parameter order="8" name="registrationDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+			<parameter order="9" name="status" mandatory="0" type="Long" size="10"/>
+			<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+		</dto>
+		<list order="2" name="employeesOut" mandatory="0">
+			<dto order="1" name="Type" mandatory="0" package="com.bbva.mtch.dto.employees.EmployeesDTO" artifactId="MTCHC001">
+				<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+				<parameter order="2" name="name" mandatory="0" type="String" size="50"/>
+				<parameter order="3" name="department" mandatory="0" type="String" size="50"/>
+				<parameter order="4" name="rfc" mandatory="0" type="String" size="20"/>
+				<parameter order="5" name="email" mandatory="0" type="String" size="20"/>
+				<parameter order="6" name="phone" mandatory="0" type="String" size="20"/>
+				<parameter order="7" name="address" mandatory="0" type="String" size="20"/>
+				<parameter order="8" name="registrationDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+				<parameter order="9" name="status" mandatory="0" type="Long" size="10"/>
+				<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+			</dto>
+		</list>
+	</paramsOut>
+	<description>TRX para CRUD de Employees</description>
+</transaction>
